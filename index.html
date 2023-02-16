@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		.flex-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			background-color: #f2f2f2;
+		}
+		
+		.flex-item {
+			flex-basis: 50%;
+		}
+		
+		p {
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item">
+			<h1>Harsh Tikone</h1>
+		</div>
+		<div class="flex-item">
+			<h1>48</h1>
+		</div>
+	</div>
+	
+	<p>Answer to question 2<br>the oscillator's frequency is approximately 425 Hz</p>
+	<p>Answer to question 3<br>The frictional force between the pole and the horizontal surface is 29.4 N.</p>
+	<p>Answer to question 4<br>The probability that a chord drawn at random in the circle has length more than that of the triangle is 1/4.</p>
+	<p>Answer to question 5<br>The minimum speed at which the tanker should travel for the rest of the journey to deliver at least 1000 L of water to the society is approximately 37.5 km/h.</p>
+	<p>Answer to question 6<br>The unit digit of the product 628^123 * 437^895 is 6.</p>
+	<p>Answer to question 7<br>Hello, my name is Harsh. I'm currently pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning at Thakur college of Engineering and Technology. I'm really interested in the field of AI and Machine Learning because of its potential to solve complex real-world problems and make a positive impact on society. In my free time, I enjoy reading books and articles on the latest advancements in AI, as well as participating in online forums and discussions on the topic. After graduation, I hope to pursue a career in the field of AI and work on innovative projects that can benefit society and make a positive impact on people's lives</p>
+	<p>Answer to question 8<br>Algorithm for finding the winning id in a lottery:<br>
+
+Input: n (the number of lottery tickets)<br>
+
+Create a list of ids from 1 to n<br>
+While the length of the list is greater than 1, repeat steps 3-5<br>
+Remove every alternate id starting from the first id<br>
+If the length of the list is 1, break out of the loop and return the remaining id as the winner<br>
+Remove every alternate id starting from the last id<br>
+If the length of the list is 1, break out of the loop and return the remaining id as the winner<br>
+Repeat steps 3-6 until only one id remains<br>
+Return the winning id.<br></p>
+	<p>Answer to question 9<br>def pour_water(x, y):<br>
+    # x and y are the capacities of the 2 jugs respectively<br>
+    &nbsp;x_current = 0<br>
+    &nbsp;y_current = 0<br>
+    &nbsp;steps = []<br>
+
+    &nbsp;while y_current != 2:<br>
+        &nbsp;&nbsp;# Fill the 4L jug<br>
+        &nbsp;&nbsp;if x_current == 0:<br>
+            &nbsp;&nbsp;&nbsp;steps.append('Fill the 4L jug')<br>
+            &nbsp;&nbsp;&nbsp;x_current = x<br>
+<br>
+        # Pour water from 4L jug to 3L jug<br>
+        &nbsp;&nbsp;if y_current < 3 and x_current > 0:<br>
+            &nbsp;&nbsp;&nbsp;steps.append('Pour water from 4L jug to 3L jug')<br>
+            &nbsp;&nbsp;if x_current + y_current <= 3:<br>
+                &nbsp;&nbsp;&nbsp;y_current += x_current<br>
+                &nbsp;&nbsp;&nbsp;x_current = 0<br>
+            &nbsp;&nbsp;else:<br>
+               &nbsp;&nbsp;&nbsp;x_current -= (3 - y_current)<br>
+                &nbsp;&nbsp;&nbsp;y_current = 3<br>
+<br>
+        # Empty the 3L jug<br>
+        &nbsp;&nbsp;if y_current == 3:<br>
+            &nbsp;&nbsp;&nbsp;steps.append('Empty the 3L jug')<br>
+            &nbsp;&nbsp;&nbsp;y_current = 0<br>
+
+        # Pour water from 4L jug to 3L jug<br>
+        &nbsp;&nbsp;if y_current < 3 and x_current > 0:<br>
+            &nbsp;&nbsp;&nbsp;steps.append('Pour water from 4L jug to 3L jug')<br>
+            &nbsp;&nbsp;&nbsp;if x_current + y_current <= 3:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;y_current += x_current<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;x_current = 0<br>
+            &nbsp;&nbsp;&nbsp;else:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;x_current -= (3 - y_current)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;y_current = 3<br>
+
+    return steps<br>
+<br>
+# Test the function with 4L and 3L jugs<br>
+steps = pour_water(4, 3)<br>
+for step in steps:<br>
+    &nbsp;print(step)<br>
+</p>
+</body>
+</html>
